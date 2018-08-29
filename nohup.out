@@ -1,0 +1,108 @@
+2018-08-29T14:55:26.707+0800 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] MongoDB starting : pid=21070 port=27017 dbpath=/data/db 64-bit host=izj6c44hu8106kj13xrqtiz
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] modules: none
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] build environment:
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten]     distmod: rhel70
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-29T14:55:26.714+0800 I CONTROL  [initandlisten] options: {}
+2018-08-29T14:55:26.714+0800 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-29T14:55:26.714+0800 I STORAGE  [initandlisten] 
+2018-08-29T14:55:26.714+0800 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-29T14:55:26.714+0800 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-29T14:55:26.714+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-29T14:55:27.539+0800 I STORAGE  [initandlisten] WiredTiger message [1535525727:539230][21070:0x7f8624cc3b00], txn-recover: Main recovery loop: starting at 9/6272
+2018-08-29T14:55:27.673+0800 I STORAGE  [initandlisten] WiredTiger message [1535525727:673157][21070:0x7f8624cc3b00], txn-recover: Recovering log 9 through 10
+2018-08-29T14:55:27.755+0800 I STORAGE  [initandlisten] WiredTiger message [1535525727:755588][21070:0x7f8624cc3b00], txn-recover: Recovering log 10 through 10
+2018-08-29T14:55:27.833+0800 I STORAGE  [initandlisten] WiredTiger message [1535525727:833182][21070:0x7f8624cc3b00], txn-recover: Set global recovery timestamp: 0
+2018-08-29T14:55:27.854+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 3895 processes, 65535 files. Number of processes should be at least 32767.5 : 0.5 times number of files.
+2018-08-29T14:55:27.871+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:27.894+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-29T14:55:27.895+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-29T14:55:35.304+0800 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2018-08-29T14:55:35.304+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-29T14:55:35.304+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-29T14:55:35.305+0800 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-29T14:55:35.305+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-29T14:55:35.306+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-29T14:55:35.410+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-29T14:55:35.410+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-08-29T14:55:35.410+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-29T14:55:40.981+0800 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] MongoDB starting : pid=21101 port=27017 dbpath=/data/db 64-bit host=izj6c44hu8106kj13xrqtiz
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] modules: none
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] build environment:
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten]     distmod: rhel70
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-29T14:55:40.987+0800 I CONTROL  [initandlisten] options: {}
+2018-08-29T14:55:40.987+0800 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-29T14:55:40.987+0800 I STORAGE  [initandlisten] 
+2018-08-29T14:55:40.987+0800 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-29T14:55:40.987+0800 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-29T14:55:40.987+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-29T14:55:41.807+0800 I STORAGE  [initandlisten] WiredTiger message [1535525741:807586][21101:0x7f33434beb00], txn-recover: Main recovery loop: starting at 10/6272
+2018-08-29T14:55:41.942+0800 I STORAGE  [initandlisten] WiredTiger message [1535525741:942553][21101:0x7f33434beb00], txn-recover: Recovering log 10 through 11
+2018-08-29T14:55:42.048+0800 I STORAGE  [initandlisten] WiredTiger message [1535525742:48495][21101:0x7f33434beb00], txn-recover: Recovering log 11 through 11
+2018-08-29T14:55:42.123+0800 I STORAGE  [initandlisten] WiredTiger message [1535525742:123643][21101:0x7f33434beb00], txn-recover: Set global recovery timestamp: 0
+2018-08-29T14:55:42.161+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 3895 processes, 65535 files. Number of processes should be at least 32767.5 : 0.5 times number of files.
+2018-08-29T14:55:42.178+0800 I CONTROL  [initandlisten] 
+2018-08-29T14:55:42.202+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-29T14:55:42.203+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-29T14:55:52.908+0800 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2018-08-29T14:55:52.908+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-29T14:55:52.908+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-29T14:55:52.908+0800 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-29T14:55:52.908+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-29T14:55:52.910+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-29T14:55:53.021+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-29T14:55:53.021+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-08-29T14:55:53.021+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
