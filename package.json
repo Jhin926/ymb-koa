@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/yemubing/ymb-koa#readme",
   "dependencies": {
-    "koa": "^2.5.2"
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "mongodb": "^3.1.4"
   }
 }
