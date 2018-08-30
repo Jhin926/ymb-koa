@@ -35,7 +35,7 @@ const FormatDate = (date, fmt) => {
 app.use(bodyParser());
 
 app.use(async ctx => {
-  ctx.set("Access-Control-Allow-Origin", "*");
+  ctx.set("Access-Control-Allow-Origin", "https://yemb.gitee.io/qrcode");
   ctx.set(
     "Access-Control-Allow-Methods",
     "GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS"
