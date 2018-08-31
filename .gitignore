@@ -9,3 +9,5 @@ test/e2e/reports
 selenium-debug.log
 .idea/
 selenium-debug.log
+private.key
+full_chain.pem
