@@ -6,8 +6,8 @@ const bodyParser = require("koa-bodyparser");
 let MongoClient = require("mongodb").MongoClient;
 
 var options = {
-  key: fs.readFileSync('./private.key'),
-  cert: fs.readFileSync('./full_chain.pem')
+  key: fs.readFileSync('./ali.key'),
+  cert: fs.readFileSync('./ali.pem')
 };
 
 function padLeftZero(str) {
@@ -72,7 +72,7 @@ app.use(async ctx => {
   }
 });
 
-const port = 80;
+const port = 443;
 
 https.createServer(options, app.callback()).listen(port, () => {
   console.log(`server is run at http://localhost:${port}`);
