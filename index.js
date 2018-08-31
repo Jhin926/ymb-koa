@@ -1,7 +1,14 @@
 const Koa = require("koa");
+const https = require("https");
+const fs = require("fs");
 const app = new Koa();
 const bodyParser = require("koa-bodyparser");
 let MongoClient = require("mongodb").MongoClient;
+
+var options = {
+  key: fs.readFileSync('./private.key'),
+  cert: fs.readFileSync('./full_chain.pem')
+};
 
 function padLeftZero(str) {
   return ("00" + str).substr(str.length);
@@ -67,6 +74,9 @@ app.use(async ctx => {
 
 const port = 80;
 
-app.listen(port, () => {
+https.createServer(options, app.callback()).listen(port, () => {
   console.log(`server is run at http://localhost:${port}`);
 });
+// app.listen(port, () => {
+//   console.log(`server is run at http://localhost:${port}`);
+// });
