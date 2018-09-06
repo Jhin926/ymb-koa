@@ -1,6 +1,9 @@
 const https = require('https');
 const fs = require('fs');
 
+const static = require('koa-static');
+app.use(static(__dirname + './www'))
+
 const options = {
   key: fs.readFileSync('./214961025560978.key'),
   ca: fs.readFileSync('./chain.pem'),
