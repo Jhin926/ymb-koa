@@ -5,6 +5,9 @@ const app = new Koa();
 const bodyParser = require("koa-bodyparser");
 let MongoClient = require("mongodb").MongoClient;
 
+const static = require('koa-static');
+app.use(static(__dirname + './www'))
+
 var options = {
   key: fs.readFileSync('./214961025560978.key'),
   ca: fs.readFileSync('./chain.pem'),
