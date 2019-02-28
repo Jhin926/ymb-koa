@@ -46,7 +46,8 @@ const FormatDate = (date, fmt) => {
 app.use(bodyParser());
 
 app.use(async ctx => {
-  ctx.set("Access-Control-Allow-Origin", "https://yemb.gitee.io");
+  // ctx.set("Access-Control-Allow-Origin", "https://yemb.gitee.io");
+  ctx.set("Access-Control-Allow-Origin", "*");
   ctx.set(
     "Access-Control-Allow-Methods",
     "GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS"
@@ -79,7 +80,7 @@ app.use(async ctx => {
 const port =443;
 
 https.createServer(options, app.callback()).listen(port, () => {
-  console.log(`server is run at http://localhost:${port}`);
+  console.log(`server is run at https://localhost`);
 });
 // app.listen(port, () => {
 //   console.log(`server is run at http://localhost:${port}`);
