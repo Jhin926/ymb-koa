@@ -9,9 +9,9 @@ const static = require('koa-static');
 app.use(static(__dirname + '/www'))
 
 var options = {
-  key: fs.readFileSync('./keys/214961025560978.key'),
-  ca: fs.readFileSync('./keys/chain.pem'),
-  cert: fs.readFileSync('./keys/public.pem')
+  key: fs.readFileSync('./keys/ali.key'),
+  // ca: fs.readFileSync('./keys/ali.pem'),
+  cert: fs.readFileSync('./keys/ali.pem')
 };
 
 function padLeftZero(str) {
